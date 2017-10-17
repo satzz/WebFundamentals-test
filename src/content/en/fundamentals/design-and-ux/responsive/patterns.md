@@ -1,4 +1,4 @@
-project_path: /web/_project.yaml
+project_path: /web/fundamentals/_project.yaml
 book_path: /web/fundamentals/_book.yaml
 description: Responsive web design patterns are quickly evolving, but there are a handful of established patterns that work well across the desktop and mobile devices
 
@@ -40,7 +40,7 @@ that it usually only requires one breakpoint between small screens and large
 screens.
 
 <img src="imgs/mostly-fluid.svg">
-<a href="https://googlesamples.github.io/web-fundamentals/fundamentals/design-and-ui/responsive/mostly-fluid.html" class="button button-primary">Try it</a>
+<a href="https://googlesamples.github.io/web-fundamentals/fundamentals/design-and-ux/responsive/mostly-fluid.html" class="button button-primary">Try it</a>
 
 In the smallest view, each content `div` is stacked vertically.  When the screen
 width hits 600px, the primary content `div` remains at `width: 100%`, while the
@@ -54,7 +54,7 @@ Sites using this pattern include:
  * [SimpleBits](http://simplebits.com/){: .external }
 
 <pre class="prettyprint">
-{% includecode content_path="web/fundamentals/design-and-ui/responsive/_code/mostly-fluid.html" region_tag="mfluid" adjust_indentation="auto" %}
+{% includecode content_path="web/fundamentals/design-and-ux/responsive/_code/mostly-fluid.html" region_tag="mfluid" adjust_indentation="auto" %}
 </pre>
 
 ## Column drop 
@@ -67,7 +67,7 @@ breakpoints for this layout pattern is dependent on the content and changes
 for each design.
 
 <img src="imgs/column-drop.svg">
-<a href="https://googlesamples.github.io/web-fundamentals/fundamentals/design-and-ui/responsive/column-drop.html" class="button button-primary">Try it</a>
+<a href="https://googlesamples.github.io/web-fundamentals/fundamentals/design-and-ux/responsive/column-drop.html" class="button button-primary">Try it</a>
 
 Like the mostly fluid sample, content is stacked vertically in the smallest
 view, but as the screen expands beyond 600px, the primary and secondary content
@@ -81,7 +81,7 @@ Sites using this pattern include:
  * [Wee Nudge](http://weenudge.com/){: .external }
 
 <pre class="prettyprint">
-{% includecode content_path="web/fundamentals/design-and-ui/responsive/_code/column-drop.html" region_tag="cdrop" adjust_indentation="auto" %}
+{% includecode content_path="web/fundamentals/design-and-ux/responsive/_code/column-drop.html" region_tag="cdrop" adjust_indentation="auto" %}
 </pre>
 
 ## Layout shifter
@@ -95,7 +95,7 @@ major breakpoint, it is more complex to maintain and likely involves changes
 within elements, not just overall content layout.
 
 <img src="imgs/layout-shifter.svg">
-<a href="https://googlesamples.github.io/web-fundamentals/fundamentals/design-and-ui/responsive/layout-shifter.html" class="button button-primary">Try it</a>
+<a href="https://googlesamples.github.io/web-fundamentals/fundamentals/design-and-ux/responsive/layout-shifter.html" class="button button-primary">Try it</a>
 
 This simplified example shows the layout shifter pattern, on smaller screens
 content is stacked vertically, but changes significantly as the screen becomes
@@ -109,7 +109,7 @@ Sites using this pattern include:
  * [Andersson-Wise Architects](http://www.anderssonwise.com/){: .external }
 
 <pre class="prettyprint">
-{% includecode content_path="web/fundamentals/design-and-ui/responsive/_code/layout-shifter.html" region_tag="lshifter" adjust_indentation="auto" %}
+{% includecode content_path="web/fundamentals/design-and-ux/responsive/_code/layout-shifter.html" region_tag="lshifter" adjust_indentation="auto" %}
 </pre>
 
 ## Tiny tweaks
@@ -120,7 +120,7 @@ size, resizing images, or moving content around in very minor ways.
 It works well on single column layouts such as one page linear websites and text-heavy articles.
 
 <img src="imgs/tiny-tweaks.svg">
-<a href="https://googlesamples.github.io/web-fundamentals/fundamentals/design-and-ui/responsive/tiny-tweaks.html" class="button button-primary">Try it</a>
+<a href="https://googlesamples.github.io/web-fundamentals/fundamentals/design-and-ux/responsive/tiny-tweaks.html" class="button button-primary">Try it</a>
 
 As its name implies, not much changes with this sample as the screen size changes.
 As the screen width gets larger, so do the font size and padding.
@@ -131,7 +131,7 @@ Sites using this pattern include:
  * [Future Friendly](http://futurefriendlyweb.com/){: .external }
 
 <pre class="prettyprint">
-{% includecode content_path="web/fundamentals/design-and-ui/responsive/_code/tiny-tweaks.html" region_tag="ttweaks" adjust_indentation="auto" %}
+{% includecode content_path="web/fundamentals/design-and-ux/responsive/_code/tiny-tweaks.html" region_tag="ttweaks" adjust_indentation="auto" %}
 </pre>
 
 
@@ -143,7 +143,7 @@ showing it when the screen size is large enough, and on smaller screens,
 content is only a click away.
 
 <img src="imgs/off-canvas.svg">
-<a href="https://googlesamples.github.io/web-fundamentals/fundamentals/design-and-ui/responsive/off-canvas.html" class="button button-primary">Try it</a>
+<a href="https://googlesamples.github.io/web-fundamentals/fundamentals/design-and-ux/responsive/off-canvas.html" class="button button-primary">Try it</a>
 
 Rather than stacking content vertically, this sample uses a `transform: translate(-250px, 0)` declaration to hide two of the content `div`s off screen.  JavaScript is used
 to show the divs by adding an open class to the element to make visible.  As the
@@ -161,5 +161,5 @@ Sites using this pattern include:
  * [Facebook's Mobile Site](https://m.facebook.com/){: .external }
 
 <pre class="prettyprint">
-{% includecode content_path="web/fundamentals/design-and-ui/responsive/_code/off-canvas.html" region_tag="ocanvas" adjust_indentation="auto" %}
+{% includecode content_path="web/fundamentals/design-and-ux/responsive/_code/off-canvas.html" region_tag="ocanvas" adjust_indentation="auto" %}
 </pre>

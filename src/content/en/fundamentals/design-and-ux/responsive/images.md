@@ -1,4 +1,4 @@
-project_path: /web/_project.yaml
+project_path: /web/fundamentals/_project.yaml
 book_path: /web/fundamentals/_book.yaml
 description: A picture is worth 1000 words, and images play an integral part of every page. But they also often account for most of the downloaded bytes.  With responsive web design not only can our layouts change based on device characteristics, but images as well.
 
@@ -164,10 +164,10 @@ depending on media queries or image format.
 <div style="clear:both;"></div>
 
 <pre class="prettyprint">
-{% includecode content_path="web/fundamentals/design-and-ui/responsive/_code/media.html" region_tag="picture" adjust_indentation="auto" %}
+{% includecode content_path="web/fundamentals/design-and-ux/responsive/_code/media.html" region_tag="picture" adjust_indentation="auto" %}
 </pre>
 
-[Try it](https://googlesamples.github.io/web-fundamentals/fundamentals/design-and-ui/media/media.html){: target="_blank" .external }
+[Try it](https://googlesamples.github.io/web-fundamentals/fundamentals/media/media.html){: target="_blank" .external }
 
 In the above example, if the browser width is at least 800px then either
 `head.jpg` or `head-2x.jpg` is used, depending on the device resolution. If the
@@ -190,10 +190,10 @@ image element, allowing the browser to automatically calculate the effective
 pixel density and choose the best image to download.
 
 <pre class="prettyprint">
-{% includecode content_path="web/fundamentals/design-and-ui/responsive/_code/sizes.html" region_tag="picture" adjust_indentation="auto" %}
+{% includecode content_path="web/fundamentals/design-and-ux/responsive/_code/sizes.html" region_tag="picture" adjust_indentation="auto" %}
 </pre>
 
-[Try it](https://googlesamples.github.io/web-fundamentals/fundamentals/design-and-ui/media/sizes.html){: target="_blank" .external }
+[Try it](https://googlesamples.github.io/web-fundamentals/fundamentals/media/sizes.html){: target="_blank" .external }
 
 
 The above example renders an image that is half the viewport width
@@ -260,10 +260,10 @@ span the full width of the viewport, while on larger screens, it should only
 take a small proportion.
 
 <pre class="prettyprint">
-{% includecode content_path="web/fundamentals/design-and-ui/responsive/_code/breakpoints.html" region_tag="picture" adjust_indentation="auto" %}
+{% includecode content_path="web/fundamentals/design-and-ux/responsive/_code/breakpoints.html" region_tag="picture" adjust_indentation="auto" %}
 </pre>
 
-[Try it](https://googlesamples.github.io/web-fundamentals/fundamentals/design-and-ui/media/breakpoints.html){: target="_blank" .external }
+[Try it](https://googlesamples.github.io/web-fundamentals/fundamentals/media/breakpoints.html){: target="_blank" .external }
 
 The `sizes` attribute, in the above example, uses several media queries to
 specify the size of the image. When the browser width is greater than
@@ -304,7 +304,7 @@ capabilities of the device.  Depending on the type of image and level of
 compression, image quality may not appear to change, but the file size drops
 significantly.
 
-[Try it](https://googlesamples.github.io/web-fundamentals/fundamentals/design-and-ui/media/compressive.html){: target="_blank" .external }
+[Try it](https://googlesamples.github.io/web-fundamentals/fundamentals/media/compressive.html){: target="_blank" .external }
 
 Caution: Use caution with the compressive technique because of the increased
 memory and decoding costs it requires. Resizing large images to fit on smaller
@@ -522,10 +522,10 @@ downloaded and applied to the content `div`, while on larger screens
 url(large.png)` is applied to the content `div`.
 
 <pre class="prettyprint">
-{% includecode content_path="web/fundamentals/design-and-ui/responsive/_code/conditional-mq.html" region_tag="conditional" adjust_indentation="auto" %}
+{% includecode content_path="web/fundamentals/design-and-ux/responsive/_code/conditional-mq.html" region_tag="conditional" adjust_indentation="auto" %}
 </pre>
 
-[Try it](https://googlesamples.github.io/web-fundamentals/fundamentals/design-and-ui/media/conditional-mq.html){: target="_blank" .external }
+[Try it](https://googlesamples.github.io/web-fundamentals/fundamentals/media/conditional-mq.html){: target="_blank" .external }
 
 ### Use image-set to provide high res images
 
@@ -552,10 +552,10 @@ Safari with the `-webkit` vendor prefix.  Take care to include a
 fallback image for when `image-set()` is not supported; for example:
 
 <pre class="prettyprint">
-{% includecode content_path="web/fundamentals/design-and-ui/responsive/_code/image-set.html" region_tag="imageset" adjust_indentation="auto" %}
+{% includecode content_path="web/fundamentals/design-and-ux/responsive/_code/image-set.html" region_tag="imageset" adjust_indentation="auto" %}
 </pre>
 
-[Try it](https://googlesamples.github.io/web-fundamentals/fundamentals/design-and-ui/media/image-set.html){: target="_blank" .external }
+[Try it](https://googlesamples.github.io/web-fundamentals/fundamentals/media/image-set.html){: target="_blank" .external }
 
 The above loads the appropriate asset in browsers that support image-set;
 otherwise it falls back to the 1x asset. The obvious caveat is that while
@@ -583,10 +583,10 @@ This also provides the benefit of ensuring something is rendered if the browser
 doesn't support resolution-specific media queries.
 
 <pre class="prettyprint">
-{% includecode content_path="web/fundamentals/design-and-ui/responsive/_code/media-query-dppx.html" region_tag="mqdppx" adjust_indentation="auto" %}
+{% includecode content_path="web/fundamentals/design-and-ux/responsive/_code/media-query-dppx.html" region_tag="mqdppx" adjust_indentation="auto" %}
 </pre>
 
-[Try it](https://googlesamples.github.io/web-fundamentals/fundamentals/design-and-ui/media/media-query-dppx.html){: target="_blank" .external }
+[Try it](https://googlesamples.github.io/web-fundamentals/fundamentals/media/media-query-dppx.html){: target="_blank" .external }
 
 You can also use the min-width syntax to display alternative images depending on
 the viewport size.  This technique has the advantage that the image is not
@@ -648,17 +648,17 @@ raster images:
 
 
 <pre class="prettyprint">
-{% includecode content_path="web/fundamentals/design-and-ui/responsive/_code/icon-svg.html" region_tag="iconsvg" adjust_indentation="auto" %}
+{% includecode content_path="web/fundamentals/design-and-ux/responsive/_code/icon-svg.html" region_tag="iconsvg" adjust_indentation="auto" %}
 </pre>
 
-[Try it](https://googlesamples.github.io/web-fundamentals/fundamentals/design-and-ui/media/icon-svg.html){: target="_blank" .external }
+[Try it](https://googlesamples.github.io/web-fundamentals/fundamentals/media/icon-svg.html){: target="_blank" .external }
 
 ### Use icon fonts with caution
 
 <figure class="attempt-right">
   <img src="img/icon-fonts.png" class="center" srcset="img/icon-fonts.png 1x, img/icon-fonts-2x.png 2x" alt="Example of a page that uses FontAwesome for its font icons.">
   <figcaption>
-    <a href="https://googlesamples.github.io/web-fundamentals/fundamentals/design-and-ui/media/icon-font.html" target="_blank" class="external">
+    <a href="https://googlesamples.github.io/web-fundamentals/fundamentals/media/icon-font.html" target="_blank" class="external">
       Example of a page that uses FontAwesome for its font icons.
     </a>
   </figcaption>
@@ -680,10 +680,10 @@ compared to SVG icons:
 <div style="clear:both;"></div>
 
 <pre class="prettyprint">
-{% includecode content_path="web/fundamentals/design-and-ui/responsive/_code/icon-font.html" region_tag="iconfont" adjust_indentation="auto" %}
+{% includecode content_path="web/fundamentals/design-and-ux/responsive/_code/icon-font.html" region_tag="iconfont" adjust_indentation="auto" %}
 </pre>
 
-[Try it](https://googlesamples.github.io/web-fundamentals/fundamentals/design-and-ui/media/icon-font.html){: target="_blank" .external }
+[Try it](https://googlesamples.github.io/web-fundamentals/fundamentals/media/icon-font.html){: target="_blank" .external }
 
 There are hundreds of free and paid icon fonts available including [Font
 Awesome](https://fortawesome.github.io/Font-Awesome/),
@@ -780,10 +780,10 @@ correct part.
 <div style="clear:both;"></div>
 
 <pre class="prettyprint">
-{% includecode content_path="web/fundamentals/design-and-ui/responsive/_code/image-sprite.html" region_tag="sprite" adjust_indentation="auto" %}
+{% includecode content_path="web/fundamentals/design-and-ux/responsive/_code/image-sprite.html" region_tag="sprite" adjust_indentation="auto" %}
 </pre>
 
-[Try it](https://googlesamples.github.io/web-fundamentals/fundamentals/design-and-ui/media//image-sprite.html){: target="_blank" .external }
+[Try it](https://googlesamples.github.io/web-fundamentals/fundamentals/media//image-sprite.html){: target="_blank" .external }
 
 Spriting has the advantage of reducing the number of downloads required to get
 multiple images, while still enabling caching.

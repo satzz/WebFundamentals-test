@@ -1,4 +1,4 @@
-project_path: /web/_project.yaml
+project_path: /web/fundamentals/_project.yaml
 book_path: /web/fundamentals/_book.yaml
 description: Learn how to animate modal views in your apps.
 
@@ -13,7 +13,7 @@ description: Learn how to animate modal views in your apps.
   <figure>
     <img src="images/dont-press.gif" alt="Animating a modal view." />
     <figcaption>
-      <a href="https://googlesamples.github.io/web-fundamentals/fundamentals/design-and-ui/animations/modal-view-animation.html" target="_blank" class="external">Try it</a>
+      <a href="https://googlesamples.github.io/web-fundamentals/fundamentals/design-and-ux/animations/modal-view-animation.html" target="_blank" class="external">Try it</a>
     </figcaption>
   </figure>
 </div>
