@@ -1,32 +1,28 @@
-Let's put it all together:
 
-    getJSON('story.json').then(function(story) {
+Thinking async isn't easy. If you're struggling to get off the mark,
+try writing the code as if it were synchronous. In this case:
+
+    try {
+      var story = getJSONSync('story.json');
       addHtmlToPage(story.heading);
 
-      return story.chapterUrls.reduce(function(sequence, chapterUrl) {
-        // Once the last chapter's promise is done…
-        return sequence.then(function() {
-          // …fetch the next chapter
-          return getJSON(chapterUrl);
-        }).then(function(chapter) {
-          // and add it to the page
-          addHtmlToPage(chapter.html);
-        });
-      }, Promise.resolve());
-    }).then(function() {
-      // And we're all done!
+      story.chapterUrls.forEach(function(chapterUrl) {
+        var chapter = getJSONSync(chapterUrl);
+        addHtmlToPage(chapter.html);
+      });
+
       addTextToPage("All done");
-    }).catch(function(err) {
-      // Catch any error that happened along the way
+    }
+    catch (err) {
       addTextToPage("Argh, broken: " + err.message);
-    }).then(function() {
-      // Always hide the spinner
-      document.querySelector('.spinner').style.display = 'none';
-    })
+    }
 
-[Try it](https://googlesamples.github.io/web-fundamentals/fundamentals/primers/async-example.html)
+    document.querySelector('.spinner').style.display = 'none'
 
-And there we have it (see
-[code](https://github.com/googlesamples/web-fundamentals/blob/gh-pages/fundamentals/primers/async-example.html)),
-a fully async version of the sync version. But we can do better. At the moment
-our page is downloading like this:
+[Try it](https://googlesamples.github.io/web-fundamentals/fundamentals/primers/sync-example.html)
+
+
+That works (see
+[code](https://github.com/googlesamples/web-fundamentals/blob/gh-pages/fundamentals/primers/sync-example.html))!
+But it's sync and locks up the browser while things download. To make this
+work async we use `then()` to make things happen one after another.
