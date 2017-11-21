@@ -24,4 +24,3 @@
 위 코드는 잘 작동합니다([코드](https://github.com/googlesamples/web-fundamentals/blob/gh-pages/fundamentals/getting-started/primers/sync-example.html){: target="_blank" .external } 참조)!
 그러나 이는 동기 코드이고 다운로드하는 동안 브라우저를 잠급니다. 이를 비동기로 작동하게
 하려면 `then()`을 사용하여 순서대로 발생하게 합니다.
-
